@@ -1,0 +1,26 @@
+{
+  "name": "wikistack",
+  "version": "1.0.0",
+  "description": "wikistack pair project",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon ./app.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sammy-k/wikistack.git"
+  },
+  "author": "sam_s & emil_s",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/sammy-k/wikistack/issues"
+  },
+  "homepage": "https://github.com/sammy-k/wikistack#readme",
+  "dependencies": {
+    "express": "^4.17.1",
+    "html-template-tag": "^3.1.0",
+    "morgan": "^1.10.0",
+    "nodemon": "^2.0.12"
+  }
+}
