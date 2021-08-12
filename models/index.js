@@ -1,8 +1,13 @@
 const Sequelize = require("sequelize");
-//const { toDefaultValue } = require("sequelize/types/lib/utils");
 const db = new Sequelize("postgres://localhost:5432/wikistack", {
   logging: false,
 });
+
+function generateSlug (title) {
+  // Removes all non-alphanumeric characters from title
+  // And make whitespace underscore
+  return title.replace(/\s+/g, '_').replace(/\W/g, '');
+}
 
 const Page = db.define("page", {
   title: {
@@ -37,5 +42,9 @@ const User = db.define("user", {
     }
   },
 });
+
+// Page.beforeValidate(page, {
+//   slug:
+// })
 
 module.exports = { db, Page, User };
