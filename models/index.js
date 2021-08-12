@@ -1,5 +1,5 @@
 const Sequelize = require("sequelize");
-const { toDefaultValue } = require("sequelize/types/lib/utils");
+//const { toDefaultValue } = require("sequelize/types/lib/utils");
 const db = new Sequelize("postgres://localhost:5432/wikistack", {
   logging: false,
 });
